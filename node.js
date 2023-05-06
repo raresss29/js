@@ -1,15 +1,20 @@
 //. Prima chstie
+
 console.log("Aicie prima chestie");
 function boolNum (num) {return num % 10 === 0}
 console.log(boolNum(10))
+
 //. A doua chestie
+
 console.log("Aici e a doua chestie");
 function tellFortune (N, Z, Y, X){
   const output = `Vei fi un ${X} in ${Y} casatorit cu ${Z} si vei avea ${N} copii`;
   console.log(output)
 }
 tellFortune (3, "Emanuel", "Italia", "Programator")
+
 //. A treia chestie
+
 console.log("Aici e a treia chestie");
   function numeleUneiZileASaptamanii(myNumber){
     switch (myNumber){
@@ -43,3 +48,85 @@ numeleUneiZileASaptamanii(4);
 numeleUneiZileASaptamanii(5);
 numeleUneiZileASaptamanii(6);
 numeleUneiZileASaptamanii(7);
+
+//.ex 1 array and loops 
+
+function evenNumbers(nr) {
+  if(nr >=0){
+    if (nr % 2 === 0){
+      console.log(nr)
+    }  
+    nr--;    
+    return evenNumbers(nr) 
+  }
+}
+evenNumbers(10);
+
+var mm = 0;
+function evenNumbers(nr) {
+  if(mm <= nr){
+    if (mm % 2 === 0){
+      console.log(mm)
+    }  
+    mm++;    
+    return evenNumbers(nr) 
+  }
+}
+evenNumbers(10);
+
+let nr=10;
+for(let i=0; i<=nr; i++){
+  if(i % 2 === 0)
+    console.log(i)
+}
+
+let nr = 10;
+while(nr>=0){
+  if(nr % 2 === 0)
+    console.log(nr)
+  nr--;
+}
+
+//.ex 2 array and loops
+
+const aListOfItems = [2, 4, 6, 12, 16];
+var sum = 0;
+for (let i=0; i<aListOfItems.length; i++){
+  if(i>=0){
+    sum=sum + aListOfItems[i];
+  }
+}
+console.log(sum)
+
+//.ex 3 array and loops
+
+const aListOfItems = [2, 4, 6, 12, 16];
+let da=[];
+for (let i=aListOfItems.length-1; i>=0; i--){
+  if(i>=0){
+    da=da+[aListOfItems[i]];
+  }
+  if(i>0){
+    da=da+", "
+  }
+  asta="["+da+"]"
+}
+console.log(asta)
+
+//.ex 4 array and loops
+
+const aListOfItems = "ana are mere";
+let da=0;
+for (let i=0; i<=aListOfItems.length; i++){
+  if(aListOfItems[i]==="a")
+    da=da+1;
+  else if(aListOfItems[i]==="e")
+    da=da+1;
+  else if(aListOfItems[i]==="i")
+    da=da+1;
+  else if(aListOfItems[i]==="o")
+    da=da+1;
+  else if(aListOfItems[i]==="u")
+    da=da+1;
+}
+console.log(da)
