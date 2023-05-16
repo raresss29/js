@@ -80,7 +80,7 @@ for(let i=0; i<=nr; i++){
     console.log(i)
 }
 
-let nr = 10;
+let nr2 = 10;
 while(nr>=0){
   if(nr % 2 === 0)
     console.log(nr)
@@ -89,7 +89,7 @@ while(nr>=0){
 
 //.ex 2 array and loops
 
-const aListOfItems = [2, 4, 6, 12, 16];
+const aListOfItems1 = [2, 4, 6, 12, 16];
 var sum = 0;
 for (let i=0; i<aListOfItems.length; i++){
   if(i>=0){
@@ -100,8 +100,8 @@ console.log(sum)
 
 //.ex 3 array and loops
 
-const aListOfItems = [2, 4, 6, 12, 16];
-let da=[];
+const aListOfItems2 = [2, 4, 6, 12, 16];
+let da3=[];
 for (let i=aListOfItems.length-1; i>=0; i--){
   if(i>=0){
     da=da+[aListOfItems[i]];
@@ -130,3 +130,45 @@ for (let i=0; i<=aListOfItems.length; i++){
     da=da+1;
 }
 console.log(da)
+
+//. tema obiecte
+
+//.ex1 obiecte
+
+const retete = {}
+retete.titlu="Pizza"
+retete.portii=3
+retete.ingrediente=["sunca", "cas", "ketchup"]
+console.log(retete)
+
+//.ex2 obiecte
+
+function lista()
+
+const obiect = {
+  a: 1,
+  b: 2
+}, proprietate ="b";
+delete obiect[proprietate];
+
+console.log(obiect)
+
+//.ex3 obiecte
+
+const lista=[ 
+  { titlu: "Carte 1",
+   autor: "Autor 1",
+   esteCitita: 1 },
+  { titlu: "Carte 2",
+   autor: "Autor 2",
+   esteCitita: 0 },
+]
+for (let i=0; i<=dada.length; i++)
+  if(lista[i].esteCitita)
+    console.log(
+      `ai citit deja ${dada[i].titlu} de ${dada[i].autor}`
+    )
+  else
+    console.log(
+      `trebuie sa citesti ${dada[i].titlu} de ${dada[i].autor}`
+    )  
