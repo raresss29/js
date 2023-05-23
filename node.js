@@ -172,3 +172,47 @@ for (let i=0; i<=dada.length; i++)
     console.log(
       `trebuie sa citesti ${dada[i].titlu} de ${dada[i].autor}`
     )  
+
+    //.tema js functii
+
+    //.ex1
+    var da4;
+function findSquare(num) {
+    console.log(da4 = num * num)
+}
+findSquare(25)
+
+
+function findSquare(num) {
+    console.log(Math.pow(num, 2))
+}
+findSquare(-12)
+
+//.ex 2
+
+function mamaliga(start, end) {
+      console.log(Math.random() * (end-start) + start)
+}
+mamaliga(11, 13)
+
+//.ex 3
+
+function letterCount(str, lett) {
+  let c=0;
+  for(let i=0; i<str.length; i++){
+    if(str.charAt(i)===lett)
+        c+=1;
+  }
+  console.log(c)
+}
+letterCount("alina avea mere la mare", "a")
+
+//.ex 4
+
+function addNumber(...args){
+  let sum = 0;
+  for(let main of args)
+  sum+=main;
+  console.log(sum)
+}
+addNumber(1, 2, 3, 4, 5) 
