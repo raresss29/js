@@ -195,6 +195,12 @@ function mamaliga(start, end) {
 }
 mamaliga(11, 13)
 
+function mamaliga(start, end) {
+  console.log(Math.ceil(Math.random() * (end-start) + start));
+  console.log(Math.floor(Math.random() * (end-start) + start));
+  }
+  mamaliga(11, 13)
+
 //.ex 3
 
 function letterCount(str, lett) {
